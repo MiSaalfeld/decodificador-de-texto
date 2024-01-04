@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="script.js" defer></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav>
+            <a class="cabecalho__titulo">Decodificador de Texto</a>
+        </nav>
+    </header>
+    
+    
+    <main class="decodificador">
+        <!-- usei o logo da alura start-->
+        <img  id="imagem__cabecalho" src="alura-start-removebg-preview-removebg-preview.png" alt="a_de _alura">
+      
+       
+  
+        <section class="conteudo__principal">
+                <textarea id="textoarea1" name="textoentrada" class="texto__entrada" placeholder="Digite seu texto" tabindex="1"  autofocus></textarea>
+                
+                <p class="texto__aviso"><img src="lovepik-color-exclamation-mark-png-image_401703463_wh860-removebg-preview.png"> Apenas letras minúsculas e sem acento serão criptografadas.</p>
+               
+
+
+                <!-- botoes de ccriptografar e descriptografar-->
+                
+                <div class="botoes__area">
+                    <button  onclick="encripta()" class="botao__encripta" id="btn1">Criptografar</button>
+                    <button onclick="desencripta()" class="botao__encripta" id="btn2">Descriptografar</button>
+                </div>
+        </section> 
+        
+
+
+        <div id= "texto__saida__com__imagem"> 
+            <img id="imagem__do__texto__saida" src="mulher_com_lupa_rosa.webp" alt="imagem de mulher loira em um fundo rosa segurando uma lupa decodificador">
+            <h3 id="h3__caixa__do__texto__saida">Nenhuma mensagem encontrada</h3> 
+            <p id="texto__aviso__saida" class="texto__aviso">Digite na caixa  de texto ao lado o texto que você deseja criptografar ou descriptografar clicando no botao correspondente.</p>
+        </div>
+
+        <div id="area__botao__saida" >
+            <textarea id="texto__de__saida" name="textosaida" class="texto__saida" placeholder="Nenhuma mensagem encontrada"></textarea>
+            <button onclick="copiaTexto()" class="botao__encripta" id="btn3">Copiar</button>
+        </div> 
+
+    </main>
+    
+    
+    <!-- contato -->
+    <footer class="rodape">
+
+        <div class="apresentacao__links">
+            <h2 class="apresentacao__links__subtitulo"></h2> <h2>Acesse minhas redes:</h2>
+
+            <a class="apresentacao__links__navegacao" href="https://www.instagram.com/realizabymisaalfeld/"> 
+               <img src="instagram.png">
+            </a>
+            <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/mirian-saalfeld-administracao-hospitalar/">
+               <img src="linkedin.png"> 
+        
+            </a>
+            <a class="apresentacao__links__navegacao" href="https://github.com/MiSaalfeld">
+                <img src="github.png"> 
+              
+            </a>
+        </div>
+
+    </section>
+
+  <p>Decodificador feito por Mirian Saalfeld no projeto One, em parceria com a Alura e a Oracle.</p>
+    
+    </footer>
+    
+</body>
+</html>
